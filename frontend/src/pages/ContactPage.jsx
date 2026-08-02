@@ -51,7 +51,7 @@ export default function ContactPage() {
     }
 
     try {
-      await axios.post('/api/contact', formData);
+      await axios.post('https://webapps-midq.onrender.com/api/contact', formData);
       setStatus('Thanks for reaching out. We will be in touch shortly.');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
